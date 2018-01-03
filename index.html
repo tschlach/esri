@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Biohabitats Strategic Mapping - Editor</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.5/esri/css/main.css">
+  <link rel="stylesheet" href="map.css">
+  <link rel="icon" href="http://example.com/favicon.png">
+  <script src="https://js.arcgis.com/4.5/"></script>
+  <script src="projects.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+<div id="editArea" class="editArea-container">
+  <div id="addFeatureDiv">
+    <h3 class="list-heading">Add Projects</h3>
+    <ul style="font-size: 13px; padding-left: 1.5em;">
+      <li>Click Add Project button</li>
+      <li>Click on the map to create the project</li>
+    </ul>
+    <input type="button" class="edit-button" value="Add Project" id="btnAddFeature">
+  </div>
+
+  <div id="updateInstructionDiv" style="text-align:center">
+    <p class="or-wrap"><span class="or-text">Or</span></p>
+    <input type="button" class="edit-button" value="Add Sampling Site" id="btnAddSite">
+  </div>
+
+  <div id="featureUpdateDiv" style="display:none; margin-top: 1em;">
+    <h3 class="list-heading">Enter the project information</h3>
+
+    <div id="attributeArea">
+      <label for="inputDescription">Project Name:</label>
+      <input class="inputInfo" type="text" id="inputName" placeHolder="Enter Project Name"><br>
+
+      <label for="inputDescription2">Project Number:</label>
+      <input class="inputInfo" type="text" id="inputNumber" placeHolder="Enter Project Number"><br>
+
+      <label for="inputDescription3">Project Team Leader:</label>
+      <input class="inputInfo" type="text" id="inputPTL" placeHolder="Enter Project Team Leader"><br>
+
+      <label for="inputDescription4">Water Body:</label>
+      <input class="inputInfo" type="text" id="inputWaterBody" placeHolder="Water Body"><br>
+
+      <label for="inputDescription5">Use Class:</label>
+      <input class="inputInfo" type="text" id="inputUseClass" placeHolder="Use Class"><br>
+
+      <label for="inputDescription6">County:</label>
+      <input class="inputInfo" type="text" id="inputCounty" placeHolder="County"><br>
+
+      <label for="inputDescription7">Project Description:</label>
+      <input class="inputInfo" type="text" id="inputProjectDescription" placeHolder="Project Description"><br>
+
+      <label for="inputDescription8">Previous Collection:</label>
+      <input class="inputInfo" type="text" id="inputPreviousCollection" placeHolder="Previous Collection"><br>
+
+      <input type="button" class="edit-button" value="Update project info" id="btnUpdate">
+    </div>
+
+    <div id="deleteArea">
+      <input type="button" class="edit-button" value="Delete project" id="btnDelete">
+    </div>
+
+  </div>
+</div>
+<div id="viewDiv"></div>
+<div id ="infoDiv"><h1>this is the place where project info will show<h2></div>
+</body>
+</html>
